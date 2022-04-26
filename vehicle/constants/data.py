@@ -1,0 +1,74 @@
+class Constants:
+    GEAR_1_PIN_ID = 1
+    GEAR_2_PIN_ID = 2
+    ACC_PEDAL_PIN_ID = 3
+    BRAKE_PEDAL_PIN_ID = 4
+    BATTERY_PIN_ID = 5
+
+    GEAR_SIGNAL_ID = 1
+    ACC_PEDAL_SIGNAL_ID = 2
+    BRAKE_PEDAL_SIGNAL_ID = 3
+    REQ_TORQUE_SIGNAL_ID = 4
+    BATTERY_SIGNAL_ID = 5
+
+class Gear1Voltages:
+    PARK_STATUS_VOLTAGE = 0.67
+    NEUTRAL_STATUS_VOLTAGE = 1.48
+    REVERSE_STATUS_VOLTAGE = 2.28
+    DRIVE_STATUS_VOLTAGE = 3.12
+    WHEN_BATTERY_ERROR_STATUS = 0
+
+class Gear2Voltages:
+    PARK_STATUS_VOLTAGE = 3.12
+    NEUTRAL_STATUS_VOLTAGE = 2.28
+    REVERSE_STATUS_VOLTAGE = 1.48
+    DRIVE_STATUS_VOLTAGE = 0.67
+    WHEN_BATTERY_ERROR_STATUS = 0
+
+class GearShifterSignals:
+    PARK = 'Park'
+    NEUTRAL = 'Neutral'
+    REVERSE = "Reverse"
+    DRIVE = "Drive"
+
+class BatteryVoltages:
+    VOLTAGE_FOR_ERROR_STATUS = 1100
+    VOLTAGE_FOR_NOT_READY_STATUS = 250
+    VOLTAGE_FOR_READY_STATUS = 650
+    
+class BatterySignals:
+    ERROR = 'Error'
+    NOT_READY = 'NotReady'
+    READY = "Ready"
+
+class BrakePedalVoltages:
+    ERROR_STATUS_VOLTAGE = 0.4
+    PRESSED_STATUS_VOLTAGE = 1.5
+    RELEASED_STATUS_VOLTAGE = 2.5
+    WHEN_BATTERY_ERROR_STATUS = 0
+
+class BrakePedalSignals:
+    ERROR = 'Error'
+    PRESSED = 'Pressed'
+    RELEASED = "Released"
+
+class AccPedalVoltages:
+    ERROR_STATUS_VOLTAGE = 0.5
+    ZERO_PERCENT_STATUS_VOLTAGE = 1.5
+    THIRDTEEN_PERCENT_STATUS_VOLTAGE = 2.25
+    FIFTEEN_PERCENT_STATUS_VOLTAGE = 2.7
+    HUNDRED_PERCENT_STATUS_VOLTAGE = 3.2
+    WHEN_BATTERY_ERROR_STATUS = 0
+
+class AccPedalSignals:
+    ERROR = "Error"
+    ZERO_PERCENT = "0 %"
+    THIRDTEEN_PERCENT = "30 %"
+    FIFTEEN_PERCENT = "50 %"
+    HUNDRED_PERCENT = "100 %"
+
+class ReqTorqueSignals:
+    ZERO_NM = "0 Nm"
+    THREE_THOUSAND = "3000 Nm"
+    FIVE_THOUSAND = "5000 Nm"
+    TEN_THOUSAND  = "10000 Nm"
